@@ -4,9 +4,9 @@ let signer = undefined;
 const getMoodButton = document.getElementById("getMood");
 const setMoodButton = document.getElementById("setMood");
 
-const MoodContractAddress = "0x38da8de96963B143cB13bb0Ef0250faC7e874f5b";
+const MoodContractAddress = "0x978C582B5001CEb23ECeb82cbc24B87624956524";
 const MoodContractABI = [
-	{
+  {
     inputs: [
       {
         internalType: "string",
@@ -32,7 +32,7 @@ const MoodContractABI = [
     stateMutability: "view",
     type: "function",
   },
-]
+];
 
 const provider = new ethers.providers.Web3Provider(window.ethereum, "sepolia");
 
