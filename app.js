@@ -7,31 +7,31 @@ const setMoodButton = document.getElementById("setMood");
 const MoodContractAddress = "0x38da8de96963B143cB13bb0Ef0250faC7e874f5b";
 const MoodContractABI = [
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_mood",
-				"type": "string"
-			}
-		],
-		"name": "setMood",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "getMood",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	}
+    inputs: [
+      {
+        internalType: "string",
+        name: "_mood",
+        type: "string",
+      },
+    ],
+    name: "setMood",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "getMood",
+    outputs: [
+      {
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
 ]
 
 const provider = new ethers.providers.Web3Provider(window.ethereum, "sepolia");
@@ -76,5 +76,6 @@ getMoodButton.addEventListener("click", getMood);
 setMoodButton.addEventListener("click", setMood);
 
 console.log("Hello");
+
 
 
